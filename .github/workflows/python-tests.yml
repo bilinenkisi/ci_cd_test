@@ -17,4 +17,5 @@ jobs:
         pip install pytest pytest-cov
     - name: Run tests
       run: |
-        pytest --cov=src
+        pytest --cov=src 
+        coverage report --fail-under=80
